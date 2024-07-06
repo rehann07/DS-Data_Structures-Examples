@@ -23,7 +23,7 @@ int main(){
 }
 void push(){
 
-   if(top==4){
+   if(stack[top]==4){
     printf("Stack is overflow !");return;
    }
    top+=1;
@@ -31,7 +31,7 @@ void push(){
    scanf("%d",&stack[top]);
 }
 void pop(){
-   if(top==-1){
+   if(stack[top]==-1){
      printf("Stack is underflow !");return;
     }
    printf("%d is popped out!",stack[top]);
