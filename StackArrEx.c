@@ -2,6 +2,10 @@
 int stack[5];
 int top=-1;
 
+void push();
+void pop();
+void display();
+
 int main(){
     int choice=0;
      do{
@@ -39,7 +43,7 @@ void pop(){
 
 }
 void display(){
-    for(int i=0;i<5;i++){
+    for(int i=0;i<=top;i++){
    printf("%d\n",stack[i]);
     }
 }
